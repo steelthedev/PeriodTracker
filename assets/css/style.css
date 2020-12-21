@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background:#f5f5f5!important;
+  font-family:fantasy!important;
+}
+
+section .form-calc{
+  background:#ffffff;
+  padding:2.5rem 1.5rem;
+  
+}
+
+
+
+.navbar{
+      background:#69f0ae;
+      color:#111111;
+    }
+
+.navbar navbar-brand{ 
+      color: #111111;
+      padding-left:40px;
+    }
+    
+    .navbar-b ul li a{
+      color: #111111 !important;
+      text-transform:uppercase;
+    }
+    
+    
+    
+    .input-calendar {
+			display: block;
+			width: 100%;
+			max-width: 360px;
+			margin: 0 auto;
+			height: 3.2em;
+			line-height: 3.2em;
+			font: inherit;
+			padding: 0 1.2em;
+			border: 1px solid #d8d8d8;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+		}
+
+		.btn-calendar {
+			display: block;
+			width: 100%;
+			max-width: 360px;
+			height: 3.2em;
+			line-height: 3.2em;
+			background-color: #52555a;
+			margin: 0 auto;
+			font-weight: 600;
+			color: #ffffff !important;
+			text-decoration: none !important;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+		}
+
+		.btn-calendar:hover {
+			background-color: #5a6268;
+		}
+    
+    
+    @media(max-width:1048px){
+
+.navbar-brand{
+font-size:32px;
+padding-left:60px;
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.navbar-brand{
+
+font-size:25px;
+padding-left:23px;
+z-index: 1000!important;
+}
+
+
+
+}
+
+

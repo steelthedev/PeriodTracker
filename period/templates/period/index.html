@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %} 
+
+<section class="main">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-8 text-center mt-5">
+        <h2>Calculate Your Coming Period Date </h2>
+        <p>Your cycle is the range at which your ovulation occurs.On average it is usually 28days but it might vary depending on you .<br>
+        Your start date of last ovulation ia the first day your last period commenced e.g your ovulation lasted for a week the previous month, thus the first day is the start of that one week
+        </p>
+      </div>
+      <div class="col-md-12 form-calc">
+      <form action="{% url 'period:main' %}" method="POST">
+        {% csrf_token %}
+        <div class="row justify-content-center">
+      <div class="col-md-12 mt-3">
+        <div class="calculator">
+          {{form|crispy}}
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-outline-white " name="submit"value="submit">Submit</button>
+      </div>
+      </form>
+      </div>
+      <div class="col-md-8 mt-5 text-center">
+        
+      <div class="result">
+        
+      {% if submitbutton == "submit" %}
+       <h3>Your next period is :<strong  class="d-block">{{men_date}}</strong></strong></h3>
+      
+      {% endif %}
+       
+      </div>
+      </div>
+          </div>
+  </div>
+</section>
+
+
+
+
+{% endblock %}
