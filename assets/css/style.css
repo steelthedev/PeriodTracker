@@ -63,7 +63,12 @@ section .form-calc{
 		.btn-calendar:hover {
 			background-color: #5a6268;
 		}
-    
+  
+  
+  .result strong{
+    color: #69f0ae;
+    font-weight:700;
+  }  
     
     @media(max-width:1048px){
 
