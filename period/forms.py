@@ -6,8 +6,8 @@ class PeriodForm(forms.Form):
     
   }))
   first_day_of_last=forms.CharField(required=True,widget=forms.TextInput(attrs={
-    'placeholder':'In form of 2020-06-05',
-    'class':'calendar'
+    'placeholder':'In form of 06-05-2024',
+    
   }))
   
   fields=[

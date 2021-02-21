@@ -26,7 +26,8 @@ SECRET_KEY = '!no&j=vpod+0tmoq@$rsxbfzl7-=v9$ii#i&bi&(&50$l3m19&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['periodapptracker.herokuapp.com',
+'127.0.0.1']
 
 
 # Application definition
@@ -46,6 +47,7 @@ CRISPY_TEMPLATE_PACK='bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -124,3 +126,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=(os.path.join(BASE_DIR,'assets')),
+
+
+
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER='drlifewritinghub@gmail.com'
+EMAIL_HOST_PASSWORD='kalel2000'
