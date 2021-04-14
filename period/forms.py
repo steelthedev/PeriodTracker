@@ -7,7 +7,9 @@ class PeriodForm(forms.Form):
   }))
   first_day_of_last=forms.CharField(required=True,widget=forms.TextInput(attrs={
     'placeholder':'In form of 06-05-2024',
+
     'id':'picker'
+
     
   }))
   
