@@ -133,8 +133,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=(os.path.join(BASE_DIR,'assets')),
 
 
-
-<<<<<<< HEAD
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 #EMAIL_HOST='smtp.live.com'
@@ -151,5 +149,3 @@ EMAIL_PORT=587
 EMAIL_USE_TLS=False
 EMAIL_HOST_USER='drlifewritinghub@gmail.com'
 EMAIL_HOST_PASSWORD='kalel2000'
-
->>>>>>> fe9aaf9f4e005ea7f8c24396ea02d39255381f47
