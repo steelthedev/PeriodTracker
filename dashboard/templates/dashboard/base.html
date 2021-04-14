@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+	<div class="dash-welcome">
+	<div class="row justify-content-center">
+		<div class="col-lg-5 text-center mt-3">
+			
+			<img src ="{% static 'img/sign.jpg' %}" width="100%">
+			</div>
+			<div class="col-lg-7 mt-3">
+				<p> Welcome to your health dashboard <strong>{{name}}</strong>,
+				<span class="lead">Your next period is on the <strong>{{date}} </strong></span>
+				 Your calcuations on your period date shall be stored and  displayed to you anytime you login only if you login before calculating.
+				remember, all you have to do is to calculate with our powered app</p>
+
+			</div>
+   
+		<div class="col-lg-8  mt-3 text-center">
+			<h2> Create Health Notes With Our simple NotePad</h2>
+		</div>
+		<div class="col-lg-8 mt-3 text-center">
+			<p> Our note pad is a your micro blog where you can save your observations about your health issues. Create your notes on the go.
+			</p>
+			<button class="btn btn-outline-white dash-btn">
+				Go to Notepad
+			</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+{% endblock %}
