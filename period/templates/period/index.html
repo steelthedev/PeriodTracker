@@ -16,9 +16,10 @@
       <form action="{% url 'period:main' %}" method="POST">
         {% csrf_token %}
         <div class="row justify-content-center">
-      <div class="col-md-12 mt-3">
+      <div class="col-md-12 mb-5 mt-5 mt-3">
         <div class="calculator">
           {{form|crispy}}
+          <input type="text" id="picker" class="form-control picker">
         </div>
       </div>
 

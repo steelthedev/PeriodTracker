@@ -4,12 +4,12 @@
 }
 
 body{
-  background:#f5f5f5!important;
-  font-family:fantasy!important;
+  background:#fff;
 }
 
+
+
 section .form-calc{
-  background:#ffffff;
   padding:2.5rem 1.5rem;
   
 }
@@ -17,7 +17,7 @@ section .form-calc{
 
 
 .navbar{
-      background:#69f0ae;
+      background:#7cb342;
       color:#111111;
     }
 
@@ -31,44 +31,65 @@ section .form-calc{
       text-transform:uppercase;
     }
     
-    
-    
-    .input-calendar {
-			display: block;
-			width: 100%;
-			max-width: 360px;
-			margin: 0 auto;
-			height: 3.2em;
-			line-height: 3.2em;
-			font: inherit;
-			padding: 0 1.2em;
-			border: 1px solid #d8d8d8;
-			box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
-		}
-
-		.btn-calendar {
-			display: block;
-			width: 100%;
-			max-width: 360px;
-			height: 3.2em;
-			line-height: 3.2em;
-			background-color: #52555a;
-			margin: 0 auto;
-			font-weight: 600;
-			color: #ffffff !important;
-			text-decoration: none !important;
-			box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
-		}
-
-		.btn-calendar:hover {
-			background-color: #5a6268;
-		}
   
   
   .result strong{
     color: #69f0ae;
     font-weight:700;
-  }  
+  } 
+
+.registeration{
+  padding:80px 0;
+
+}
+
+
+form .btn, .dash-btn {
+  padding:20px 30px 20px 30px;
+  background:#f44336;
+  border:6px solid transparent;
+  color:#fff;
+}
+  
+
+.signform h6{
+  font-size:30px;
+  font-weight:700;
+  color:#7cb342;
+
+}
+
+
+.form-control{
+  margin-top:3px;
+}
+
+.label{
+  margin-top:9px;
+}
+
+
+
+
+
+
+.dash-welcome{
+  padding: 60px 0;
+  width:100%;
+  
+}
+
+.dash-welcome img{
+  width: 100%;
+  border:6px solid transparent;
+  transition:.6s;
+
+}
+
+.dash-welcome img:hover{
+  transform:scale(1.06);
+}
+
     
     @media(max-width:1048px){
 
@@ -94,5 +115,4 @@ z-index: 1000!important;
 
 
 }
-
 
