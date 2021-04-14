@@ -6,6 +6,6 @@ app_name='period'
 urlpatterns=[
   
   path('',views.mainpage,name="main"),
- 
+  
   
   ]

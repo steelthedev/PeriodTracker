@@ -9,7 +9,6 @@ body{
 }
 
 section .form-calc{
-  background:#ffffff;
   padding:2.5rem 1.5rem;
   
 }
@@ -31,38 +30,6 @@ section .form-calc{
       text-transform:uppercase;
     }
     
-    
-    
-    .input-calendar {
-			display: block;
-			width: 100%;
-			max-width: 360px;
-			margin: 0 auto;
-			height: 3.2em;
-			line-height: 3.2em;
-			font: inherit;
-			padding: 0 1.2em;
-			border: 1px solid #d8d8d8;
-			box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
-		}
-
-		.btn-calendar {
-			display: block;
-			width: 100%;
-			max-width: 360px;
-			height: 3.2em;
-			line-height: 3.2em;
-			background-color: #52555a;
-			margin: 0 auto;
-			font-weight: 600;
-			color: #ffffff !important;
-			text-decoration: none !important;
-			box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
-		}
-
-		.btn-calendar:hover {
-			background-color: #5a6268;
-		}
   
   
   .result strong{
@@ -95,4 +62,14 @@ z-index: 1000!important;
 
 }
 
-
+.registration{
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  padding:30px 0;
+  margin:auto;
+  margin-bottom:40px;
+  margin-top:40px;
+  background:pink;
+}
