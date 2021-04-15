@@ -24,11 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '!no&j=vpod+0tmoq@$rsxbfzl7-=v9$ii#i&bi&(&50$l3m19&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['periodapptracker.herokuapp.com',
 '127.0.0.1']
-
+#ALLOWED_HOSTS=[]
 
 # Application definition
 

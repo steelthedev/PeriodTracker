@@ -18,14 +18,13 @@ class Signup(UserCreationForm):
       'username','first_name','last_name','email','password1','password2'
       ]
 
+
 class Login(AuthenticationForm):
-  username=forms.CharField(
-    widget=forms.TextInput(attrs=
-    {'class':'form-control'}
-    ),required=True,label='Username'
-    )
-  password1=forms.CharField(
-    widget=forms.TextInput(attrs=
-    {'class':'form-control'}
-    ),required=True,label='Password'
-    )
+   username=forms.CharField(max_length=200,widget=forms.TextInput(attrs={'class':'form-control'}),required=True)
+   
+   password=forms.CharField(widget=forms.PasswordInput(attrs={'class':'form-control'}),required=True,label='Password')
+   
+   class Meta:
+     model=User
+     
+     fields=['username','password']

@@ -32,7 +32,21 @@ def SignupView(request):
     
   else:
     form=Signup()
-        
-
-    
+            
   return render(request,'accounts/signup.html',{'form':form})
+
+
+def LoginView(request):
+  if request.method=="POST":
+    form=Login(request.POST)
+    if form.is_valid:
+      user=form.get_user()
+      login(request,user)
+      return redirect('dashboard:dash_home')
+  else:
+    form=Login()
+  return render(request,'accounts/signin.html',{'form':form})
+
+def LogoutView(request):
+  logout(request)
+  return redirect('period:main')
