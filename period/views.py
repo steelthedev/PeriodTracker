@@ -19,14 +19,14 @@ def mainpage(request):
       est_date=timedelta(days=ovulation_cycle)
       men_date=old_date + est_date
 
-      if request.user.is_authenticated:
+      """if request.user.is_authenticated:
         period=Period.objects.get(user=request.user)
         period.ovulation_cycle=ovulation_cycle
         period.Period_date=men_date
         period.save()
       else:
         period=Period.objects.create(user=request.user,ovulation_cycle=ovulation_cycle,Period_date=men_date)
-        period.save()
+        period.save()"""
     
     else:
       return redirect('period:main')

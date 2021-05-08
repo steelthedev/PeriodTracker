@@ -38,8 +38,8 @@ def SignupView(request):
 
 def LoginView(request):
   if request.method=="POST":
-    form=Login(request.POST)
-    if form.is_valid:
+    form=Login(data=request.POST)
+    if form.is_valid():
       user=form.get_user()
       login(request,user)
       return redirect('dashboard:dash_home')

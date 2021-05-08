@@ -23,10 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('period.urls')),
     path('accounts/',include('accounts.urls')),
-<<<<<<< HEAD
-=======
     path('accounts/dashboard/',include('dashboard.urls'))
->>>>>>> fe9aaf9f4e005ea7f8c24396ea02d39255381f47
 ]
 
 urlpatterns += staticfiles_urlpatterns()

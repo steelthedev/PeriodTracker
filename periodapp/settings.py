@@ -27,7 +27,8 @@ SECRET_KEY = '!no&j=vpod+0tmoq@$rsxbfzl7-=v9$ii#i&bi&(&50$l3m19&'
 DEBUG = True
 
 ALLOWED_HOSTS = ['periodapptracker.herokuapp.com',
-'127.0.0.1']
+'127.0.0.1',
+'localhost']
 #ALLOWED_HOSTS=[]
 
 # Application definition
@@ -42,10 +43,7 @@ INSTALLED_APPS = [
     'period',
     'crispy_forms',
     'accounts',
-<<<<<<< HEAD
-=======
     'dashboard',
->>>>>>> fe9aaf9f4e005ea7f8c24396ea02d39255381f47
 ]
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
@@ -141,7 +139,7 @@ EMAIL_USE_TLS=True
 EMAIL_HOST_USER='drlifewritinghub@gmail.com'
 #EMAIL_HOST_USER='omoakinwumi@outlook.com'
 EMAIL_HOST_PASSWORD='kalel2000'
-=======
+
 
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
