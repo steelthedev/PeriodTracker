@@ -5,10 +5,10 @@ from django.shortcuts import reverse
 from django.dispatch import receiver
 # Create your models here.
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.SET_NULL, null=True)
     first_name = models.CharField(max_length=100, blank=True)
     last_name = models.CharField(max_length=100, blank=True)
-    email = models.EmailField(max_length=150)
+    email = models.EmailField(max_length=150,blank=True)
 
 
     def __str__(self):
